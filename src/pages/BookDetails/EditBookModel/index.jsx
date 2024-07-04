@@ -16,7 +16,7 @@ const EditBookModal = ({ book, onClose, onUpdate }) => {
     };
 
     try {
-      const response = await fetch(`http://localhost:5000/books/${book._id}`, {
+      const response = await fetch(`https://booksystembackend-1.onrender.com/books/${book._id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',

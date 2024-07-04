@@ -8,7 +8,7 @@ const Buying = () => {
   useEffect(() => {
     const fetchPurchases = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/purchases');
+        const response = await axios.get('https://booksystembackend-1.onrender.com/purchases');
         setPurchases(response.data);
       } catch (error) {
         console.error('Error fetching purchases:', error);

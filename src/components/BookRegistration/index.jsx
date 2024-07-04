@@ -63,7 +63,7 @@ const BookRegistration = () => {
 
     try {
       // const hashedPassword = await bcrypt.hash(formData.password, 10); // Hash the password
-      const response = await axios.post('http://localhost:5000/register', {
+      const response = await axios.post('https://booksystembackend-1.onrender.com/register', {
         fullName: formData.fullName,
         username: formData.userName,
         email: formData.email,

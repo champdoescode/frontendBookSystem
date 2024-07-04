@@ -9,7 +9,7 @@ const BookDetails = () => {
   useEffect(() => {
     const fetchBooks = async () => {
       try {
-        const response = await fetch('http://localhost:5000/books'); // Adjust URL if needed
+        const response = await fetch('https://booksystembackend-1.onrender.com/books'); // Adjust URL if needed
         const data = await response.json();
         setBooks(data);
       } catch (error) {

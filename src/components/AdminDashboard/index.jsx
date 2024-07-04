@@ -7,7 +7,7 @@ const AdminDashboard = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/users');
+        const response = await axios.get('https://booksystembackend-1.onrender.com/users');
         setUsers(response.data);
       } catch (error) {
         console.error('Error fetching users:', error);
@@ -23,7 +23,7 @@ const AdminDashboard = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`http://localhost:5000/users/${userId}`);
+      await axios.delete(`https://booksystembackend-1.onrender.com/users/${userId}`);
       setUsers(users.filter(user => user._id !== userId));
     } catch (error) {
       console.error('Error deleting user:', error);
