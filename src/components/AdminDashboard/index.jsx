@@ -13,6 +13,7 @@ const AdminDashboard = () => {
         console.error('Error fetching users:', error);
       }
     };
+    
 
     fetchUsers();
   }, []);
